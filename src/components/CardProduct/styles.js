@@ -29,6 +29,7 @@ export const Container = styled.div`
   }
   button {
     width: 90%;
+    font-weight: 600;
     margin: 10px 5%;
     background-color: var(--blue-light);
     border: 1px solid var(--blue-light);

@@ -4,7 +4,7 @@ export const FooterStyled = styled.footer`
   display: flex;
   flex-direction: column;
   position: fixed;
-  bottom: 5px;
+  top: 100px;
   right: 5px;
   padding: 10px;
   border-radius: 5px;

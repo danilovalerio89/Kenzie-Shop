@@ -1,16 +1,24 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   border-bottom: 1px solid var(--grey);
-  height: 65px;
+  height: 90px;
   padding: 0 20px;
   div {
-    width: 20%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    padding: 10px 0;
+    button {
+      font-weight: 600;
+      min-width: 70px;
+      margin: 0 5px;
+    }
   }
   h1 {
     cursor: pointer;
@@ -26,14 +34,15 @@ export const HeaderStyled = styled.header`
       border: 1px solid var(--blue-dark);
     }
   }
-  @media (max-width: 420px) {
-    flex-direction: column;
-    justify-content: center;
-    height: 75px;
+  @media (min-width: 820px) {
+    flex-direction: row;
+    h1 {
+      min-width: 50%;
+    }
     div {
-      padding: 3px 0;
-      width: 100%;
-      justify-content: flex-end;
+      button {
+        min-width: 100px;
+      }
     }
   }
 `;
